@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="memory.game">
+  <ClassDiagramComponents>
+    <Class name="Board" package="memory.game" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="size" type="int[][]" visibility="private"/>
+        <Field name="emptyBoard" type="boolean" visibility="private"/>
+        <Field name="cardAmount" type="int" visibility="private"/>
+        <Field name="currentCardAmount" type="int" visibility="private"/>
+        <Field name="points" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="xMax"/>
+          <Argument type="int" name="yMax"/>
+          <Argument type="int" name="pCardAmount"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getSize" returnType="int[][]" visibility="public"/>
+        <Method name="isEmptyBoard" returnType="boolean" visibility="public"/>
+        <Method name="getCardAmount" returnType="int" visibility="public"/>
+        <Method name="getCurrentCardAmount" returnType="int" visibility="public"/>
+        <Method name="getPoints" returnType="int" visibility="public"/>
+        <Method name="setEmptyBoard" returnType="void" visibility="public">
+          <Argument type="boolean" name="emptyBoard"/>
+        </Method>
+        <Method name="setCurrentCardAmount" returnType="void" visibility="public">
+          <Argument type="int" name="currentCardAmount"/>
+        </Method>
+        <Method name="setPoints" returnType="void" visibility="public">
+          <Argument type="int" name="points"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Card" package="memory.game" visibility="public" xPosition="392.0" yPosition="20.0">
+      <Fields>
+        <Field name="xPos" type="int" visibility="private"/>
+        <Field name="yPos" type="int" visibility="private"/>
+        <Field name="content" type="String" visibility="private"/>
+        <Field name="pairnumber" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="pXPos"/>
+          <Argument type="int" name="pYPos"/>
+          <Argument type="String" name="pContent"/>
+          <Argument type="int" name="pPairnumber"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getxPos" returnType="int" visibility="public"/>
+        <Method name="getyPos" returnType="int" visibility="public"/>
+        <Method name="getContent" returnType="String" visibility="public"/>
+        <Method name="getPairnumber" returnType="int" visibility="public"/>
+        <Method name="turn" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="MemoryGame" package="memory.game" visibility="public" xPosition="816.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
